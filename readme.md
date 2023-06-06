@@ -1,0 +1,1 @@
+Server=tcp:MyDbServer;Initial Catalog=MyCompany;Persist Security Info=False;User ID=MaheshAdmin;Password=P@MyPwd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

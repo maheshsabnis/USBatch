@@ -78,6 +78,11 @@ namespace AzFnHttpServices
             // Commit Transaction to Db
             await ctx.SaveChangesAsync();
 
+            // Write Data into the Queue
+            Messaging messaging = new Messaging();
+
+            await messaging.AddEntityToQueueAsync(JsonSerializer.Serialize(result.Entity));
+
             return new OkObjectResult(result.Entity);
         }
         [FunctionName("Put")]

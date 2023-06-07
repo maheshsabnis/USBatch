@@ -17,7 +17,7 @@ namespace AzFnHttpServices
         public async Task AddEntityToQueueAsync(string data)
         {
             // 1. Connect to the Storage Account using the ConnectionString
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=wmjuneusstorageaccount;AccountKey=upsaJ9r3AMJZT/S7IDgE097yB2CEse6uoUFs77tEjYjrqIqyq0fYjP7k8slv4sS8nuBs7y7mm20f+ASt69MzIA==;EndpointSuffix=core.windows.net");
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse("Queuesttrinbg");
             // 2. Create a Queue Storage Client
             CloudQueueClient cloudQueueClient = storageAccount.CreateCloudQueueClient();
 
